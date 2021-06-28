@@ -1,0 +1,88 @@
+form > label{
+    color: rgb(17, 18, 17);
+}
+
+form{
+    border: 1px solid #64fbf1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    margin-left: 20%;
+    border-radius: 6%;
+    background-color: rgb(121, 214, 242);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    box-shadow: 1px 5px 25px  rgb(121, 214, 242);
+}
+
+#username{
+    margin: 1rem;
+    padding: 0.5rem 3rem ;
+    border-radius: 12%;
+}
+
+#age{
+    margin: 1rem;
+    padding: 0.5rem 3rem ;
+    border-radius: 12%;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-left: 50%;
+}
+
+#button_user{
+    border-radius: 12%;
+    background-color: burlywood;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0.8rem;
+}
+#button_cancel{
+    border-radius: 12%;
+    background-color: burlywood;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0.8rem;
+}
+
+@media (max-width: 560px){
+    #username{
+        margin: 0.8rem;
+        padding: 0.5rem 1.5rem ;
+        border-radius: 12%;
+    }
+    
+    #age{
+        margin: 0.8rem;
+        padding: 0.5rem 1.5rem ;
+        border-radius: 12%;
+    }
+
+#button_user{
+    border-radius: 12%;
+    background-color: burlywood;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0.4rem;
+}
+#button_cancel{
+    border-radius: 12%;
+    background-color: burlywood;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0.4rem;
+}
+
+}

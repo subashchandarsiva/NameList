@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
+import AddUser from './components/Users/AddUser';
+import ShowUsers from './components/Users/ShowUsers';
 
+const MOCK_USERS =[{username:"test1",age:29,id:1},{username:"test2",age:21,id:2},{username:"test3",age:30,id:3}]
 function App() {
+
+  const [users,setUsers] = useState(MOCK_USERS)
+
+  const AddingUser =(uname,uage,uid)=>{
+    setUsers((prevState)=>{
+     return [...prevState,{username:uname,age:uage,id:uid}]})
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AddUser addUser={AddingUser}/>
+        <ShowUsers users={users} />
     </div>
   );
 }
